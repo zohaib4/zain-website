@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artistic Glass & Metal</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">  
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Artistic Glass & Metal Logo">
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="about.html">About</a></li> 
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h2>Modern Glass and Metal Solutions for Homes & Buildings</h2>
+      <p>Transforming architecture with elegance and transparency</p>
+      <a href="contact.html" class="btn">Get a Quote</a>
+    </div>
+  </section>
+
+
+<a href="https://wa.me/923332377354?text=Hello%20Artistic%20Glass%2C%20I%27m%20interested%20in%20your%20services." class="whatsapp-button" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+
+  <section class="clients-slider-section">
+    <div class="container">
+      <h2 class="section-heading" style="padding: 20px; background-color: #f8f8f8; border-radius: 20px; text-align: center; display: inline-block; font-family: 'Playfair Display', serif; font-weight: 700;">Trusted by leading brands</h2>
+
+
+      <div class="slider">
+        <div class="slide-track">
+          <img src="images/clients/foodpanda.png" alt="Foodpanda Logo" class="foodpanda-logo">
+          <img src="images/clients/alkaram.png" alt="Alkaram">
+          <img src="images/clients/ary.png" alt="ARY">
+          <img src="images/clients/toyota.png" alt="Toyota">
+          <img src="images/clients/medicare.png" alt="Medicare">
+          <img src="images/clients/aljadeed.png" alt="Al Jadeed">
+          <img src="images/clients/aljadeedmarts.png" alt="Al Jadeed Marts">
+          <img src="images/clients/diners.png" alt="Diners">
+          <img src="images/clients/gracefabrics.png" alt="Grace Fabrics">
+          <img src="images/clients/deerpencil.png" alt="Deer Pencil">
+          <img src="images/clients/sanaullatextile.png" alt="Sanaulla Textile">
+          <img src="images/clients/sapphire.png" alt="Sapphire">
+          <img src="images/clients/orient.png" alt="Orient">
+          <img src="images/clients/saya.png" alt="Saya">
+          <img src="images/clients/thecourtgroup.png" alt="The Court Group">
+          <img src="images/clients/suzuki.png" alt="Suzuki">
+
+  
+          <!-- repeat for seamless scroll -->
+          <img src="images/clients/foodpanda.png" alt="Foodpanda">
+          <img src="images/clients/alkaram.png" alt="Alkaram">
+          <img src="images/clients/ary.png" alt="ARY">
+          <img src="images/clients/toyota.png" alt="Toyota">
+          <img src="images/clients/medicare.png" alt="Medicare">
+          <img src="images/clients/aljadeed.png" alt="Al Jadeed">
+          <img src="images/clients/aljadeedmarts.png" alt="Al Jadeed Marts">
+          <img src="images/clients/diners.png" alt="Diners">
+          <img src="images/clients/gracefabrics.png" alt="Grace Fabrics">
+          <img src="images/clients/deerpencil.png" alt="Deer Pencil">
+          <img src="images/clients/sanaullatextile.png" alt="Sanaulla Textile">
+          <img src="images/clients/sapphire.png" alt="Sapphire">
+          <img src="images/clients/orient.png" alt="Orient">
+          <img src="images/clients/saya.png" alt="Saya">
+          <img src="images/clients/thecourtgroup.png" alt="The Court Group">
+          <img src="images/clients/suzuki.png" alt="Suzuki">
+
+        </div>
+      </div>
+    </div>
+  </section>
+  
+     <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Artistic Glass & Metal. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/artisticglasszain/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100064141750046" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const heroSection = document.querySelector(".hero");
+      const images = [
+        "images/hero.jpg",
+        "images/hero1.jpg",
+        "images/hero2.jpg",
+        "images/hero3.jpg",
+        "images/hero4.jpg",
+        "images/hero5.jpg",
+        "images/hero6.jpg",
+        "images/hero7.jpg",
+        "images/hero8.jpg"
+      ];
+      let index = 0;
+  
+      function changeBackground() {
+        heroSection.style.backgroundImage = `url(${images[index]})`;
+        index = (index + 1) % images.length;
+      }
+  
+      changeBackground(); // show first image immediately
+      setInterval(changeBackground, 2000);
+    });
+  </script>
+</body>
+</html>
