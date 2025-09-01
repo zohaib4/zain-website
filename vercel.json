@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "artisticglassandmetal.com"
+        }
+      ],
+      "destination": "https://www.artisticglassandmetal.com/:path*",
+      "permanent": true
+    }
+  ]
+}
